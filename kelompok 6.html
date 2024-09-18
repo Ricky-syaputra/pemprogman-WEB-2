@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SewaKos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SewaKos</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#search">Cari Kos</a></li>
+                <li><a href="#map">Peta</a></li>
+                <li><a href="#reviews">Ulasan</a></li>
+                <li><a href="#profile">Profil Pengguna</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <!-- Beranda Section -->
+    <section id="home">
+        <h2>Selamat Datang di SewaKos</h2>
+        <p>Temukan tempat tinggal ideal Anda di sekitar kampus dengan harga terjangkau dan fasilitas terbaik.</p>
+    </section>
+
+    <!-- Cari Kos Section -->
+    <section id="search">
+        <h2>Cari Kos</h2>
+        <form id="search-form">
+            <label for="location">Lokasi:</label>
+            <input type="text" id="location" placeholder="Masukkan lokasi kos">
+            <label for="price">Harga Maksimal:</label>
+            <input type="number" id="price" placeholder="Masukkan harga maksimal">
+            <button type="button" onclick="searchKos()">Cari</button>
+        </form>
+        <div id="results"></div>
+    </section>
+
+    <!-- Peta Section -->
+    <section id="map">
+        <h2>Peta Lokasi Kos</h2>
+        <div id="map-container">Peta akan ditampilkan di sini.</div>
+    </section>
+
+    <!-- Ulasan Section -->
+    <section id="reviews">
+        <h2>Ulasan Kos</h2>
+        <div id="review-list">
+            <p><strong>John Doe:</strong> Kos ini sangat nyaman dan dekat dengan kampus! 4/5</p>
+            <p><strong>Jane Smith:</strong> Harga sangat terjangkau, fasilitas oke, 5/5!</p>
+        </div>
+    </section>
+
+    <!-- Profil Pengguna Section -->
+    <section id="profile">
+        <h2>Profil Pengguna</h2>
+        <form id="profile-form">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" placeholder="Masukkan nama Anda">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Masukkan email Anda">
+            <button type="button" onclick="saveProfile()">Simpan</button>
+        </form>
+        <div id="profile-info"></div>
+    </section>
+</body>
+</html>
